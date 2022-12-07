@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.jpeg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contato</title>
+</head>
+
+<body>
+    <div class="grid_contato">
+        <div class="menu_contato">
+            <nav>
+                <ul class="home">
+
+                    <li id="linha_logo_menu"><a href="index.html"><img src="img/logo_transparente.png"></a>
+                    </li>
+                    <li id="linha_nome_menu"><a href="index.html"><b>PELE Idiomas</b></a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="contato">
+            <div id="texto_poppins" class="formulario1">
+                <h1>Formulário de Contato - Cliente</h1>
+                <form name="Formulario1">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label>Nome: <input type="text" name="nome" placeholder="Escreva seu nome" required
+                                autofocus></label>
+                        <br>
+                        <label>Email: <input type="email" name="e-mail" placeholder="usuario@exemplo.com.br"
+                                required></label>
+                        <br>
+                        <label>Telefone de contato: <input type="tel" name="cel"
+                                placeholder="(63) 9884-0101"><br></label>
+                        <br>
+                        <label>Idade: <input type="text" name="idade" placeholder="Escreva sua idade" required
+                            autofocus></label>
+                    <br>
+                        <div>Sexo: </div>
+                        <label><input type="radio" name="sexo" value="masculino">Masculino</label>
+                        <label><input type="radio" name="sexo" value="feminino">Feminino</label>
+                    </fieldset>
+                    <label>Data de hoje:<input type="date" name="calendario"><br></label><br>
+                    <fieldset>
+                        <legend>Assunto</legend>
+                        <label><input type="radio" name="assunto" value="curso">Curso de línguas</label>
+                        <label><input type="radio" name="assunto" value="intercambio">Intercâmbio</label>
+                        <label><input type="radio" name="assunto" value="exame">Exame de proficiência</label>
+                        <label><input type="radio" name="assunto" value="convenio">Convênios</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Escreva uma mensagem:</legend>
+                        <textarea name="mensagem" cols="60" rows="6"></textarea>
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="linha_form"></div>
+            <div id="texto_poppins" class="formulario2">
+                <h1>- Venha Trabalhar Conosco</h1>
+                <form name="Formulario2">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label>Nome: <input type="text" name="nome" placeholder="Escreva seu nome" required
+                                autofocus></label>
+                        <br>
+                        <label>Email: <input type="email" name="e-mail" placeholder="usuario@exemplo.com.br"
+                                required></label>
+                        <br>
+                        <label>Telefone de contato: <input type="tel" name="cel" placeholder="(63) 9884-0101"><br></label>
+                        <br>
+                        <label>Idade: <input type="text" name="idade" placeholder="Escreva sua idade" required
+                            autofocus></label>
+                    <br>
+                        <div>Sexo: </div>
+                        <label><input type="radio" name="sexo" value="masculino">Masculino</label>
+                        <label><input type="radio" name="sexo" value="feminino">Feminino</label><br>
+                        <label for="cidade"> Indique a cidade onde mora</label>
+                        <select name="municipio" id="cidade">
+                        <option value="palmas">Palmas</option>
+                        <option value="paraiso">Paraíso</option>
+                        <option value="porto_nacional">Porto Nacional</option>
+                        <option value="Miracema">Miracema</option>
+                        <option value="lajeado">Lajeado</option>
+                        <option value="outro">Outro</option>
+                        </select><br>
+                        <label for="estado"> Indique o Estado onde mora</label>
+                        <select name="estado" id="estado">
+                        <option value="tocantins">Tocantins</option>
+                        <option value="para">Pará</option>
+                        <option value="goias">Goiás</option>
+                        <option value="maranhao">Maranhão</option>
+                        <option value="outro">Outro</option>
+                        </select>
+
+                    </fieldset>
+                    <label>Data de hoje:<input type="date" name="calendario"><br></label><br>
+                    <fieldset>
+                        <legend>Cargo</legend>
+                        <label><input type="radio" name="assunto" value="professor">Professor de línguas</label>
+                        <label><input type="radio" name="assunto" value="vendedor">Vendedor de produtos</label>
+                        <label><input type="radio" name="assunto" value="secretaria">Secretária</label>
+                        <label><input type="radio" name="assunto" value="outros">Outros</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Envie seu currículo:</legend>
+                        <input id="file" type="file">
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="grid_dados_empresa">
+            <h1>Contatos da empresa</h1><br>
+            <div id="texto_roboto" class="dados_empresa">
+                <div>Endereço: Av. dos Vencedores, 1.000. Palmas - TO - CEP 70162-100</div> <div class="linha_dados_empresa"></div> <div>E-mail:pele_idiomas@unitins.br</div> <div class="linha_dados_empresa"></div> <div>Telefones de contato: (63)3323-7777 (63) 98478-6554</div>
+            </div>
+        </div>
+        <!-- Definindo o rodapé -->
+        <div id="texto_poppins" class="grid-container_4">
+            <div class="item-f1">
+                <div class="topicos">PELE Idiomas</div>
+                <nav>
+                    <ul>
+                        <li><a href="#" target="_blank">Quem Somos</a></li>
+                        <li><a href="#" target="_blank">Trabalhe Conosco</a></li>
+                        <li><a href="#" target="_blank">Convênios</a></li>
+                        <li><a href="#" target="_blank">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="item-f2">
+                <div class="topicos">Cursos</div>
+                <nav>
+                    <ul>
+                        <li><a href="#" target="_blank">Inglês</a></li>
+                        <li><a href="#" target="_blank">Francês</a></li>
+                        <li><a href="#" target="_blank">Espanhol</a></li>
+                        <li><a href="#" target="_blank">Português</a></li>
+                        <li><a href="#" target="_blank">Certificações</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="item-f3">
+                <div class="topicos">Endereço</div>
+                <nav>
+                    <ul>
+                        <li>Av. dos Vencedores, 1.000</li>
+                        <li>Palmas - TO - CEP 70162-100</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="item-f4">
+                <div class="bloco1">
+                    <hr>
+                </div>
+                <div class="bloco2">
+                    <div class="topicos">Siga-nos os bons</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="./img/facebook.svg">Facebook</a></li>
+                            <li><a href="#" target="_blank"><img src="./img/youtube.svg">Youtube</a></li>
+                            <li><a href="#" target="_blank"><img src="./img/instagram.svg">Instagram</a></li>
+                            <li><a href="#" target="_blank"><img src="./img/twitter.svg">Twitter</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

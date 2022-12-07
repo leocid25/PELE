@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.jpeg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <title>PELE Idiomas</title>
+</head>
+
+<body>
+
+    <!-- Definindo o menu2 -->
+    <div class="grid-container_1">
+        <header class="menu2">
+            <nav>
+                <ul id="texto_poppins" class="center">
+                    <li class="linha_qs_menu"><a href="#" target="_blank">Quem somos</a></li>
+                    <div class="linha"></div>
+                    <li class="tooltip_cursos"><a href="#" target="_blank">Cursos</a>
+                        <ul class="tooltiptext_cursos">
+                            <li><a href="curso_ingles.html">Inglês</a></li>
+                            <li><a href="#">Francês</a></li>
+                            <li><a href="#">Espanhol</a></li>
+                            <li><a href="#">Português</a></li>
+                        </ul>
+                    </li>
+                    <div class="linha"></div>
+                    <li class="tooltip_certificacoes"><a href="#" target="_blank">Certificações</a>
+                        <ul class="tooltiptext_certificacoes">
+                            <li><a href="#">TOEFL</a></li>
+                            <li><a href="#">Cambridge</a></li>
+                            <li><a href="#">DELF</a></li>
+                            <li><a href="#">DALF</a></li>
+                            <li><a href="#">SIELE</a></li>
+                        </ul>
+                    </li>
+                    <div class="linha"></div>
+                    <li class="tooltip_intercambio"><a href="#">Intercâmbio</a>
+                        <ul class="tooltiptext_intercambio">
+                            <li><a href="intercambio_eua.html">EUA</a></li>
+                            <li><a href="#">Inglaterra</a></li>
+                            <li><a href="#">França</a></li>
+                            <li><a href="#">Espanha</a></li>
+                        </ul>
+                    </li>
+                    <div class="linha"></div>
+                    <li><a href="#" target="_blank">Dúvidas</a></li>
+                    <div class="linha"></div>
+                    <li id="linha_menu_contato"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Definindo o grid da pagina -->
+    <div class="grid-pagina">
+
+        <!-- Definindo o Carrossel -->
+        <div class="grid-container_2">
+            <div class="carrossel">
+                <!-- Definindo o menu1 -->
+                <div class="menu1">
+                    <nav>
+                        <ul class="home">
+
+                            <li id="linha_logo_menu"><a href="#" target="_blank"><img
+                                        src="img/logo_transparente.png"></a></li>
+                            <li id="linha_nome_menu"><a href="#" target="_blank"><b>PELE Idiomas</b></a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="galeria">
+                    <ul class="lista_de_slides">
+                        <li class="slide"><a href="#" target="_blank"><img src="./img/foto01.jpg" alt="Foto 1"></a></li>
+                        <li class="slide"><a href="#" target="_blank"><img src="./img/foto02.jpg" alt="Foto 2"></a></li>
+                        <li class="slide"><a href="#" target="_blank"><img src="./img/foto03.jpg" alt="Foto 3"></a></li>
+                        <li class="slide"><a href="#" target="_blank"><img src="./img/foto04.jpg" alt="Foto 4"></a></li>
+                    </ul>
+                </div>
+                <div class="controle">
+                    <button class="opcao" onclick="altera_visao(0)">1</button>
+                    <button class="opcao" onclick="altera_visao(1)">2</button>
+                    <button class="opcao" onclick="altera_visao(2)">3</button>
+                    <button class="opcao" onclick="altera_visao(3)">4</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Definindo o cubo e os depoimentos -->
+        <div class="grid-container_3">
+
+            <!-- Definindo o cubo -->
+            <div class="cubo">
+                <div class="face face--front"><a href="intercambio_eua.html"><img
+                            src="./img/washington.jpg" alt="Foto 1">
+                        <p class="washington">Intercâmbio <br> para <br> Washington</p>
+                    </a></div>
+                <div class="face face--right"><a href="#"><img
+                            src="./img/london.jpg" alt="Foto 2">
+                        <p class="londres">Intercâmbio <br> para <br> Londres</p>
+                    </a></div>
+                <div class="face face--back"><a href="#"><img
+                            src="./img/paris.jpg" alt="Foto 3">
+                        <p class="paris">Intercâmbio <br> para <br> Paris</p>
+                    </a></div>
+                <div class="face face--left"><a href="#"><img
+                            src="./img/madrid.jpg" alt="Foto 4">
+                        <p class="madrid">Intercâmbio <br> para <br> Madrid</p>
+                    </a></div>
+                <div class="face face--top"></div>
+                <div class="face face--bottom"></div>
+            </div>
+
+            <div class="depoimento1">
+                <img src="img/aluno1.jpg">
+                <p id="texto_roboto">De repente precisei aprender inglês, francês e espanhol. Apenas uma escola de
+                    idiomas tinha um método inovador para que eu pudesse assimilar rapidamente várias línguas ao mesmo
+                    tempo!</p> <br>
+                <p id="texto_poppins">Larissa de Macedo Machado</p>
+            </div>
+
+            <div class="depoimento2">
+                <img src="img/aluno2.jpg">
+                <p id="texto_roboto">Precisei aprender português rapidamente para dominar o Brasil. Apenas a PELE
+                    idiomas, com seu método inovador, tinha professores capazes de ensinar português para nativos de uma
+                    língua que não dominavam.</p> <br>
+                <p id="texto_poppins">Xi Jinping</p>
+            </div>
+
+            <div class="depoimento5">
+                <img src="img/aluno5.jpg">
+                <p id="texto_roboto">Trabalho Prático HTML + CSS + JS do Estudante Leandro Gaddia.Este site está sendo desenvolvido como trabalho prático da disciplina de Front End, na Unitins, no curso de Sistemas de Informação, utilizando as tecnologias que aprendemos até agora que são html5, css3 e Javascript”</p>
+            </div>
+
+            <div class="depoimento3">
+                <img src="img/aluno3.jpg">
+                <p id="texto_roboto">Por conta da guerra eu me vi obrigado a aprender inglês rapidamente. Se não fosse a
+                    PELE idiomas, eu posso afirmar com toda a certeza, que não existiria a lei restrita da relatividade.
+                </p> <br>
+                <p id="texto_poppins">Albert Einstein</p>
+            </div>
+
+            <div class="depoimento4">
+                <img src="img/aluno4.jpg">
+                <p id="texto_roboto">Por nascer na Inglaterra eu pensei que dominava as nuances da língua inglesa. Posso
+                    testemunhar que somente compreendi de fato a língua inglesa após estudar no PELE idiomas.</p> <br>
+                <p id="texto_poppins">Rainha Elisabeth</p>
+            </div>
+
+        </div>
+
+        <!-- Definindo o rodapé -->
+        <div id="texto_poppins" class="grid-container_4">
+            <div class="item-f1">
+                <div class="topicos">PELE Idiomas</div>
+                <nav>
+                    <ul>
+                        <li><a href="#" target="_blank">Quem Somos</a></li>
+                        <li><a href="#" target="_blank">Trabalhe Conosco</a></li>
+                        <li><a href="#" target="_blank">Convênios</a></li>
+                        <li><a href="#" target="_blank">Contato</a></li>
+                        <li><a href="quemsou.html">Desenvolvedores</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="item-f2">
+                <div class="topicos">Cursos</div>
+                <nav>
+                    <ul>
+                        <li><a href="#" target="_blank">Inglês</a></li>
+                        <li><a href="#" target="_blank">Francês</a></li>
+                        <li><a href="#" target="_blank">Espanhol</a></li>
+                        <li><a href="#" target="_blank">Português</a></li>
+                        <li><a href="#" target="_blank">Certificações</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="item-f3">
+                <div class="topicos">Endereço</div>
+                <nav>
+                    <ul>
+                        <li>Av. dos Vencedores, 1.000</li>
+                        <li>Palmas - TO - CEP 70162-100</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="item-f4">
+                <div class="bloco1">
+                    <hr>
+                </div>
+                <div class="bloco2">
+                    <div class="topicos">Siga-nos os bons</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="./img/facebook.svg">Facebook</a></li>
+                            <li><a href="#" target="_blank"><img src="./img/youtube.svg">Youtube</a></li>
+                            <li><a href="#" target="_blank"><img src="./img/instagram.svg">Instagram</a></li>
+                            <li><a href="#" target="_blank"><img src="./img/twitter.svg">Twitter</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script/menu_flutuante.js"></script>
+    <script src="script/carrossel.js"></script>
+</body>
+
+</html>
