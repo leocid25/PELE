@@ -1,0 +1,896 @@
+/* 
+EFEITO CARROSSEL COM HTML & CSS - SEM JAVASCRIPT https://www.youtube.com/watch?v=XXUEFueOsAs
+Como fazer um SLIDESHOW com HTML e CSS | Higor Feijó https://www.youtube.com/watch?v=zxqGOgsgUtk&t=1328s
+Slideshow apenas com CSS https://www.treinaweb.com.br/blog/slideshow-apenas-com-css
+Criando um menu horizontal com HTML e CSS https://satellasoft.com/artigo/css/criando-um-menu-horizontal-com-html-e-css
+Criando Menu Horizontal com Sub-Menu https://www.youtube.com/watch?v=7u8vR-pQrYQ
+*/
+
+/* Estilos das fontes */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+  font-style: normal;
+}
+
+#texto_poppins {
+  font-family: 'Poppins';
+}
+
+#texto_roboto {
+  font-family: 'Roboto';
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Propriedades do Container Grid */
+
+.grid-pagina {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.grid-container_2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-container_3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-container_4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+/*Cubo e depoimentos */
+.grid-container_3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: pink;
+}
+
+.grid-container_3 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.cubo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: none;
+  margin: 1em 2em;
+}
+
+.depoimento1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #d9e5e3;
+  border: 0.5em solid #c2ccca;
+  padding: 1em;
+  margin: 1em 1em;
+  width: 40ch;
+  position: relative;
+  transition: transform 1s, box-shadow 2s;
+}
+
+.depoimento1:hover {
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.8);
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.depoimento1 img {
+  width: 29ch;
+  height: 15ch;
+  border: 2px solid black;
+}
+
+.depoimento2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: #d9e5e3;
+  border: 0.5em solid #c2ccca;
+  padding: 1em;
+  margin: 1em 1em;
+  width: 40ch;
+  position: relative;
+  transition: transform 1s, box-shadow 2s;
+}
+
+.depoimento2:hover {
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.8);
+  transform: scale(1.2) rotate(+5deg);
+}
+
+.depoimento2 img {
+  width: 29ch;
+  height: 15ch;
+  border: 2px solid black;
+  }
+
+  .depoimento5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #d9e5e3;
+    border: 0.5em solid #c2ccca;
+    padding: 1em;
+    margin: 1em 1em;
+    width: 40ch;
+    position: relative;
+    transition: transform 1s, box-shadow 2s;
+  }
+  
+  .depoimento5:hover {
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.8);
+    transform: scale(1.2) rotate(-5deg);
+  }
+  
+  .depoimento5 img {
+    width: 29ch;
+    height: 15ch;
+    border: 2px solid black;
+  }
+
+.depoimento3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #d9e5e3;
+  border: 0.5em solid #c2ccca;
+  padding: 1em;
+  margin: 1em 1em;
+  width: 40ch;
+  position: relative;
+  transition: transform 1s, box-shadow 2s;
+}
+
+.depoimento3:hover {
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.8);
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.depoimento3 img {
+  width: 29ch;
+  height: 15ch;
+  border: 2px solid black;
+  }
+
+.depoimento4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: #d9e5e3;
+  border: 0.5em solid #c2ccca;
+  padding: 1em;
+  margin: 1em 1em;
+  width: 40ch;
+  position: relative;
+  transition: transform 1s, box-shadow 2s;
+}
+
+.depoimento4:hover {
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.8);
+  transform: scale(1.2) rotate(+5deg);
+}
+
+.depoimento4 img {
+  width: 29ch;
+  height: 15ch;
+  border: 2px solid black;
+  }
+
+/* Rodapé */
+.grid-container_4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: rgba(67, 32, 32, 0.8);
+}
+
+.item-f1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  line-height: 30px;
+  padding-left: 50px;
+}
+
+.item-f2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  line-height: 30px;
+  padding-left: 50px;
+}
+
+.item-f3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  line-height: 30px;
+  padding-left: 50px;
+}
+
+.item-f4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  line-height: 30px;
+  display: flex;
+}
+
+.bloco1 hr {
+  transform: rotate(90deg);
+  width: 150px;
+  position:relative;
+  top: 50%;
+  border-color: pink;
+}
+
+.topicos {
+  
+  font-weight: bold;
+  margin-top: 15px;
+  color: rgba(204, 0, 255, 0.762);
+}
+
+.grid-container_4 li {
+  color: pink;
+  grid-row: 4 / span 2;
+}
+
+.grid-container_4 a {
+  color: pink;
+  text-decoration: none;
+}
+
+
+/* Cabeçalho */
+.menu1 {
+  position:absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home {
+  top: 0px;
+  font-size:large;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 10px white);
+}
+
+
+.home a{
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0 10px black;
+}
+
+#linha_logo_menu img{
+  height: 55px;
+  width: 55px;
+}
+
+#linha_nome_menu {
+  color: white;
+  font-size: xx-large;
+}
+
+.grid-container_1 {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.center{
+  /*background-color: beige;*/
+  display:flex;
+  place-items: center;
+  /* display:grid; */
+  /* width: 50%; */
+  line-height: 50px;
+  /* grid-template-columns: auto auto auto auto auto auto;
+	text-align: center; */
+  font-size:large;
+  border-radius: 20px;
+  box-shadow: 0 0 20px;
+  height: 50px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.linha {
+background-color: beige;
+width: 1px;
+height: 60%;
+display:block;
+}
+
+.center li{
+  padding: 0 10px;
+}
+
+.center li:hover{
+	background-color: #2c69cc;
+}
+
+/* Permanece com a linha do botao em preto quando o mouse passar por cima.
+#login:hover {
+  background-color: black;
+} */
+
+.center a{
+	color: black;
+	text-decoration: none;
+}
+
+.linha_qs_menu {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  white-space: nowrap;
+}
+
+#linha_menu_contato {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.botao {
+  
+  background-color: red;
+  color:white;
+  font-size: x-large;
+ 
+}
+
+.botao:hover {
+  background-color: blue;
+}
+
+/* Submenu */
+
+.tooltip_cursos {
+  position: relative;
+}
+
+.tooltip_certificacoes {
+  position: relative;
+}
+
+.tooltip_intercambio {
+  position: relative;
+}
+
+.tooltip_cursos .tooltiptext_cursos {
+  visibility: hidden;
+  box-shadow: 0 0 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  color:black;
+  text-align: center;
+  padding: 5px 0;
+  line-height: 45px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip_cursos:hover .tooltiptext_cursos {
+  visibility: visible;
+}
+
+.tooltip_certificacoes .tooltiptext_certificacoes {
+  visibility: hidden;
+  box-shadow: 0 0 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  color:black;
+  text-align: center;
+  padding: 5px 0;
+  line-height: 45px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.tooltip_certificacoes:hover .tooltiptext_certificacoes {
+  visibility: visible;
+}
+
+.tooltip_intercambio .tooltiptext_intercambio {
+  visibility: hidden;
+  box-shadow: 0 0 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  color:black;
+  text-align: center;
+  padding: 5px 0;
+  line-height: 45px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.tooltip_intercambio:hover .tooltiptext_intercambio {
+  visibility: visible;
+}
+
+/* Estilo do Carrossel */
+
+.carrossel {
+    width: 100%;
+    height: auto;
+    position:relative;
+}
+
+.galeria {
+    overflow: hidden;
+  }
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.controle {
+  position: absolute;
+  bottom: 10px;
+  left:50%;
+  transform: translateX(-50%);
+  
+}
+
+.opcao {
+  cursor: pointer;
+}
+
+.lista_de_slides {
+  
+    /*
+    Remove os estilos da lista
+    */
+
+    list-style-type: none;
+    width: 100%;
+    transition: all 0.3s;
+    
+    /* 
+      Deixa todos os itens da lista na horizontal e todos com a mesma largura.
+    
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;*/
+
+    display: flex;
+
+    /*
+    Exibindo um slide de cada vez. Agora temos um slide do lado do outro. Mas temos que fazer com que apareça apenas um de cada vez. Bom, isso é muito simples: basta que cada slide (li) preencha 100% da largura disponível.  Se temos quatro slides (li), e cada um precisa ocupar 100% do espaço disponível, nosso ul precisa ter um tamanho de 400%. Usamos uma variável do CSS para armazenar o total de itens em nosso Slideshow, e passamos essa variável para a função calc(). Assim podemos mudar facilmente o total de itens dos nossos slides. */
+    
+
+    /* --total-items: 4;
+    width: calc(var(--total-items) * 100%); */
+
+    /*
+    Sabemos que cada li possui um tamanho de 100%, certo? Então para exibir o primeiro slide, o left tem que ter valor 0. Para exibir o segundo slide, temos que mover 100% para a esquerda, ou seja, left precisará ter o valor -100%. Para exibir o terceiro slide, temos que mover 200% para a esquerda, ou seja, left precisará ter o valor -200%.Vamos aproveitar novamente as variáveis do CSS e a função calc() para tratar isso.
+
+    --selected-item: 0;
+    position: relative;
+    left: calc(var(--selected-item) * -100%); */
+    
+    /*
+    Podemos indicar uma transição para ter um efeito mais animado quando mudarmos de slide. Para isso usaremos a propriedade transition.
+    
+
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+  }
+
+  .lista_de_slides:hover {
+    animation-play-state: paused;
+  }
+
+  .slide img{
+    width: 100%;
+    height: auto;
+  }
+
+/* Estilo do cubo */
+
+.cubo {
+  width: 200px;
+  height: 200px;
+  animation: rotate 10s infinite alternate;
+  transform-style: preserve-3d;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.cubo:hover {
+  animation-play-state: paused;
+}
+
+.face {
+  background: linear-gradient(45deg, #4fd1c522, #4fd1c5cc);
+  border: -1px solid #4fd1c5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 50px;
+  font-weight: bold;
+  color: #234e52;
+
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transition: transform 1s;
+}
+
+.face img {
+  width: 100%;
+  height: 200px;
+}
+
+.face--front {
+  transform: translateZ(100px);
+}
+
+.face--front:hover {
+  transform: translateZ(102px) scale(1.5);
+}
+
+.washington {
+  display: none;
+  position:absolute;
+  transform: translateZ(105px);
+  top: 35%;
+  left: 35%;
+  color: white;
+  font-size: small;
+}
+
+.face--front:hover .washington {
+  display: block;
+}
+
+.face--right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.face--right:hover {
+  transform: rotateY(90deg) translateZ(102px) scale(1.5) ;
+}
+
+.londres {
+  display: none;
+  position:absolute;
+  transform: translateZ(105px);
+  top: 35%;
+  left: 35%;
+  color: white;
+  font-size: small;
+}
+
+.face--right:hover .londres {
+  display: block;
+}
+
+.face--back {
+  transform: rotateY(180deg) translateZ(103px);
+}
+
+.face--back:hover {
+  transform: rotateY(180deg) translateZ(103px) scale(1.5) ;
+}
+
+.paris {
+  display: none;
+  position:absolute;
+  transform: translateZ(105px);
+  top: 35%;
+  left: 35%;
+  color: white;
+  font-size: small;
+}
+
+.face--back:hover .paris {
+  display: block;
+}
+
+.face--left {
+  transform: rotateY(-90deg) translateZ(103px);
+}
+
+.face--left:hover {
+  transform: rotateY(-90deg) translateZ(103px) scale(1.5) ;
+}
+
+.madrid {
+  display: none;
+  position:absolute;
+  transform: translateZ(105px);
+  top: 35%;
+  left: 35%;
+  color: white;
+  font-size: small;
+}
+
+.face--left:hover .madrid {
+  display: block;
+}
+
+
+.face--top {
+  transform: rotateX(90deg) translateZ(100px);
+  background-color: whitesmoke;
+}
+
+.face--bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+  background-color: whitesmoke;
+  
+}
+
+/* Página de inglês */
+
+.grid_curso_ingles {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.imagem_de_fundo_ingles {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  position: relative;
+  height: 150vh;
+  background-image: url("../img/foto01.jpg");
+  background-repeat: no-repeat;
+  /*background-position: left top; */
+  background-size:cover;
+}
+
+.cursos_ingles {
+  display:grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  top: -50px;
+}
+
+.adolescente_linguas {
+  position:relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #d9e5e3;
+  border: 0.05em solid black;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em 1em;
+  width: 40ch;
+}
+
+.adulto_linguas {
+  position:relative;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #d9e5e3;
+  border: 0.05em solid black;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em 1em;
+  width: 40ch;
+}
+
+.idoso_linguas {
+  position:relative;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: #d9e5e3;
+  border: 0.05em solid black;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em 1em;
+  width: 40ch;
+}
+
+.imagem_linguas {
+  border: 0.05em solid black;
+  position:relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.titulo_linguas {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: x-large;
+  white-space: nowrap;
+}
+
+.texto_linguas {
+  text-align: center;
+}
+
+/* Página de intercâmbio para EUA */
+
+.grid_intercambio_eua {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.imagem_de_fundo_intercambio_eua {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/washington.jpg");
+  background-repeat: no-repeat;
+  /*background-position: left top; */
+  background-size:cover;
+}
+
+.intercambio_eua {
+  position: relative;
+  display:grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-content: space-evenly;
+  border: 2px solid pink;
+}
+
+.texto_intercambio_eua {
+  position: relative;
+  border: 2px solid brown;
+  width: 50%;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Página de Contato */
+
+.grid_contato {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.menu_contato {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.contato {
+  position:relative;
+  display:grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  border: 5px solid green;
+}
+
+.formulario1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.linha_form {
+  position:relative;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: beige;
+  width: 5px;
+  height: 80%;
+  display:block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.formulario1 h1 {
+  font-size: xx-large;
+}
+
+.formulario2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.formulario2 h1 {
+  font-size: xx-large;
+}
+
+.grid_dados_empresa {
+  position:relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dados_empresa {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+}
+
+.grid_dados_empresa h1 {
+  font-size: xx-large;
+}
+
+.linha_dados_empresa {
+  position:relative;
+  background-color: black;
+  width: 5px;
+  height: 80%;
+  display:block;
+}
+
+/* Página de Desenvolvedores */
+
+.grid_desenvolvedores{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.menu_desenvolvedor{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.desenvolvimento {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #d9e5e3;
+  border: 0.5em solid #c2ccca;
+  padding: 1em;
+  margin: 1em 1em;
+  position: relative;
+  transition: transform 1s, box-shadow 2s;
+}
+
+.desenvolvimento:hover {
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.8);
+  transform: scale(1.2);
+}
+
+.desenvolvimento img {
+  position: relative;
+  max-width: 40ch;
+  object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid black;
+  }
+
+  .desenvolvimento_texto {
+    margin-top: 20px;
+  }

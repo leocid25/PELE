@@ -1,0 +1,28 @@
+/* Animação do slideshow */
+/* @keyframes animacao {
+    
+    0% {margin-left: 0;}
+    25% {margin-left: 0;}
+    26% {margin-left: -100%;}
+    50% {margin-left: -100%;}
+    51% {margin-left: -200%;}
+    75% {margin-left: -200%;}
+    76% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+} */
+
+/* Animação do cubo */
+
+@keyframes rotate {
+    from {
+      transform: rotateX(-20deg) rotateY(-10deg);
+    }
+  
+    50% {
+      transform: rotateX(20deg) rotateY(320deg);
+    }
+  
+    to {
+      transform: rotateX(-20deg) rotateY(-20deg);
+    }
+  }
